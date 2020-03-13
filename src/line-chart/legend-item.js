@@ -17,7 +17,7 @@ export const LegendItem = props => {
   const legendItemNumber = index + 1;
 
   return (
-    <>
+    <React.Fragment>
       <Rect
         width={CIRCLE_WIDTH}
         height={CIRCLE_WIDTH}
@@ -38,6 +38,6 @@ export const LegendItem = props => {
       >
         {props.legendText}
       </Text>
-    </>
+    </React.Fragment>
   );
 };

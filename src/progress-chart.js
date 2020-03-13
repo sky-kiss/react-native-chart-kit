@@ -45,7 +45,7 @@ class ProgressChart extends AbstractChart {
     const withLabel = i => data.labels && data.labels[i];
 
     const legend = !hideLegend && (
-      <>
+      <React.Fragment>
         <G>
           {pies.map((_, i) => {
             return (
@@ -86,7 +86,7 @@ class ProgressChart extends AbstractChart {
             );
           })}
         </G>
-      </>
+      </React.Fragment>
     );
 
     return (
